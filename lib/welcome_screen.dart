@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:techtalk/wave_painter.dart';
 
+import 'homepage.dart';
+
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,12 @@ class WelcomeScreen extends StatelessWidget {
                         padding:
                             EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                         child: Text("Get Started".toUpperCase())),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    },
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
                             const Color(0xff1666ee)),
