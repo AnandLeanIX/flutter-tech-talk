@@ -25,12 +25,18 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Text(
                     "Welcome",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w300),
                   ),
-                  Text("Name"),
+                  Text(
+                    "Anand Kumar",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                  ),
                   SizedBox(height: 40),
                   Text(
                     "We are happy to see you here in the mobile app",
                     textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.w300, height: 1.5),
                   ),
                   SizedBox(height: 70),
                   ElevatedButton(
@@ -40,6 +46,8 @@ class WelcomeScreen extends StatelessWidget {
                         child: Text("Get Started".toUpperCase())),
                     onPressed: () {},
                     style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            const Color(0xff1666ee)),
                         shape:
                             MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
